@@ -1,0 +1,53 @@
+/* GLOBAL STYLING - CSS RESET */
+
+* {
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+}
+
+/* ELEMENT SELECTOR STYLING */
+
+html {
+   margin: 0;
+}
+body {
+   position: static; /* CSS property default */
+   border: 0;
+}
+main {
+   background-color: lightgray;
+   margin: auto;
+   padding: 5px 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+   margin: auto;
+   padding: 10px 0;
+}
+h1 {
+   font-size: 30px;
+   text-align: center;
+   height: 100%;
+   width: 100%;
+   padding: 20px 0 5px 0;
+}
+h2,
+h3,
+h4,
+h5 {
+   font-size: 20px;
+}
+h3 {
+   padding-top: 15px;
+}
+section {
+   position: relative;
+   /* position: static; */
+   background-color: white;
+   padding: 10px;
+}

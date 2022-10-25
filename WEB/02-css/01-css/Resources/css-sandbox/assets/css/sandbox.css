@@ -1,0 +1,102 @@
+/*****  BEGIN REVIEW SANDBOX *****/
+
+p {
+   font-style: italic;
+}
+.green {
+   color: rgb(3, 214, 101);
+}
+#highlight {
+   background-color: rgba(0, 255, 255, 0.649);
+   /* padding: 5px; */
+   /* border: blue solid 1px; */
+}
+
+/*****  BEGIN BOX MODEL SANDBOX *****/
+
+#box-model-sec {
+   padding: 0;
+   margin: 0;
+   height: 50vh;
+}
+.basic-box {
+   width: 100px;
+   height: 100px;
+}
+#box-one {
+   background-color: rgba(72, 179, 255, 0.45);
+   /* padding: 30px; */
+   /* padding-top: 40px; */
+   border: black solid 1px;
+   margin: auto;
+   white-space: nowrap; /* prevents text from wrapping to the next line */
+}
+#box-two {
+   background-color: rgba(144, 231, 86, 0.45);
+   border: black solid 1px;
+   margin: auto;
+   /* padding-top: 20px; */
+   /* margin-top: 40px; */
+}
+
+/* BEGIN POSITION-SECTION STYLING */
+
+.box {
+   /* width: auto;
+   height: auto; */
+   /* margin: 10px;
+   padding: 15px; */
+   border: whitesmoke solid 3px;
+}
+.position-sec {
+   position: relative;
+   z-index: 0;
+}
+
+/***** POSITION SANDBOX *****/
+
+#position1 {
+   background-color: rgba(0, 255, 98, 0.582);
+   position: static; /** CSS position property default */
+   z-index: 2; /** z-index only works on a positioned box (exception: static) */
+}
+#position2 {
+   background-color: rgba(255, 187, 0, 0.512);
+   /*position: relative; /** makes itself relative to the previously positioned element/div other boxes */
+}
+#position3 {
+   background-color: rgba(0, 149, 255, 0.615);
+   /*position: fixed; /** removes itself from relativity of other boxes & maintains it's place in the z-index */
+   right: 20px; /* 30px from the right side of the screen/viewport */
+   bottom: 40px; /* 25px from the bottom side of the screen/viewport */
+   z-index: 1;
+   /* display: none; */
+}
+#position4 {
+   background-color: rgba(255, 94, 0, 0.615);
+   /*position: relative; /** makes itself relative to the sibling element/div other boxes */
+   left: 75px; /* 150px from the left side */
+   bottom: -20px;
+}
+#position5 {
+   background-color: rgba(255, 0, 208, 0.615);
+   /*position: absolute; /** removes itself from relativity of other boxes & maintains the most frontal z-index position */
+   right: 45px; /* 45px from the right side */
+   bottom: 107px; /* 107px from the bottom of the last positioned parent element */
+   white-space: nowrap;
+}
+#position6 {
+   background-color: rgba(255, 242, 0, 0.582);
+   position: sticky; /* can you get the box to stick? */
+   top: 0;
+}
+
+/* BEGIN NOTES SECTION STYLING */
+
+#notes-sec {
+   margin-top: 10px;
+   z-index: 0;
+}
+#notes-div {
+   font-size: 12px;
+}

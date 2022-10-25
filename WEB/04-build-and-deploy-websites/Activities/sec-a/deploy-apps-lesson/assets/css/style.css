@@ -1,0 +1,95 @@
+:root {
+  /* Uncomment the code below and change the color scheme if desired https://www.w3schools.com/css/css3_variables.asp */
+  --primary: rgba(43, 91, 186, 0.6);
+  --light: rgb(255, 255, 255);
+  --greyish: rgb(116 121 129 / 80%);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(14, 13, 13);
+}
+
+a {
+  color: var(--light) !important;
+}
+
+.custom-resume {
+  background-color: var(--light);
+}
+
+.custom-resume > div {
+  min-height: 30rem;
+}
+
+.custom-text-cont:first-child {
+  flex-basis: 40%;
+}
+
+.custom-text-cont:last-child {
+  flex-basis: 60%;
+}
+
+.custom-text-cont h5 {
+  color: var(--primary) !important;
+}
+
+.custom-text-cont i {
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.custom-profile > * {
+  background-color: var(--primary);
+}
+
+.custom-profile > div:last-child span {
+  flex-basis: 15%;
+}
+
+.custom-profile > :last-child {
+  background-color: rgba(68, 106, 182, 0.5);
+}
+
+.custom-city {
+  color: var(--greyish);
+}
+
+.custom-title {
+  font-weight: 600;
+}
+
+.custom-title span {
+  color: var(--greyish);
+}
+
+img + p > span {
+  display: block;
+}
+
+/* Explain in comments below what the media queries are doing in regards to different screen sizes */
+
+@media screen and (max-width: 992px) {
+  .custom-text-cont p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .custom-resume > div > div:first-child {
+    order: 2;
+  }
+  .custom-resume > div > div:last-child {
+    order: 1;
+  }
+  .custom-resume > div > div:last-child span {
+    flex-basis: 6%;
+  }
+}

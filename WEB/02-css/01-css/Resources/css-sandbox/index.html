@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./assets/css/style.css" />
+      <link rel="stylesheet" href="./assets/css/sandbox.css" />
+      <title>CSS Sandbox</title>
+   </head>
+   <body>
+      <header>
+         <h1>Cascading Style Sheets</h1>
+      </header>
+      <main>
+         <h2>Quick Review:</h2>
+         <section>
+            <p>
+               Use an ELEMENT SELECTOR to set all the text inside of each “p”
+               tag to be italic.
+            </p>
+
+            <p class="green">
+               Use a CLASS SELECTOR to set all the elements with this class name
+               to be green.
+            </p>
+
+            <p id="highlight" class="green">
+               Use an ID SELECTOR to set the specific element with this id to
+               have a colored background.
+            </p>
+         </section>
+
+         <h3>Box Model Basics:</h3>
+         <section id="box-model-sec">
+            <div class="basic-box" id="box-one">Box 1</div>
+            <div class="basic-box" id="box-two">Box 2</div>
+         </section>
+
+         <h4>CSS Position Property:</h4>
+         <!-- <div class="box position" id="position6">sticky:</div> -->
+
+         <section id="position-sec">
+            <div class="box position" id="position1">static: default</div>
+            <div class="box position" id="position2">
+               relative: no specifiers
+            </div>
+            <div class="box position" id="position3">
+               fixed: right 20px, bottom 40px
+            </div>
+            <div class="box position" id="position4">
+               relative: left 75px, bottom -20px
+            </div>
+            <div class="box position" id="position5">
+               absolute: right 45px, bottom 107px
+            </div>
+         </section>
+         <!-- <br /><br /><br /> --><!-- Demonstrate positioning from bottom effects -->
+         <section id="notes-sec">
+            <h5>Notes:</h5>
+            <div id="notes-div">Feel free to take notes here!</div>
+         </section>
+      </main>
+   </body>
+</html>
