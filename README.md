@@ -1,6 +1,7 @@
-# jwd-nat-flex-06
+# jwd-nat-flex-07
 
-Class repository for the JWD National Flex 06 cohort.
+
+Class repository for the JWD National Flex 07 cohort.
 
 This repository will be updated as we go through the program with new information, resources, and activities.
 
