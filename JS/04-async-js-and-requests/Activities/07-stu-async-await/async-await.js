@@ -30,14 +30,7 @@ const kitchen = async () => {
     console.log('Cutting the fruit!');
     await time(1000);
     console.log(`Adding ${stocks.liquid[0]} and ${stocks.liquid[1]}!`);
-    await time(1000);
-    console.log('Start the machine!');
-    await time(2000);
-    console.log('Selecting the container!');
-    await time(3000);
-    console.log(`Select ${stocks.toppings[1]}!`);
-    await time(2000);
-    console.log('Serve the ice cream!');
+  
   } catch {
     console.log('The customer left');
   }
