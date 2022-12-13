@@ -42,3 +42,8 @@ order(2000, () => {
       console.log(`Adding ${stocks.liquid[0]} and ${stocks.liquid[1]}!`);
     });
   })
+  .then(() => {
+    return order(1000, () => {
+      console.log(`Start Machine`)
+    });
+  })
