@@ -42,23 +42,3 @@ order(2000, () => {
       console.log(`Adding ${stocks.liquid[0]} and ${stocks.liquid[1]}!`);
     });
   })
-  .then(() => {
-    return order(1000, () => {
-      console.log('Start the machine!');
-    });
-  })
-  .then(() => {
-    return order(2000, () => {
-      console.log('Selecting the container!');
-    });
-  })
-  .then(() => {
-    return order(3000, () => {
-      console.log(`Select ${stocks.toppings[1]}!`);
-    });
-  })
-  .then(() => {
-    return order(2000, () => {
-      console.log('Serve the ice cream!');
-    });
-  })
